@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="src/assets/images/favicon.ico" type="image/x-icon"/>
+
+		<title>Projeto Mario | Dev Week</title>
+
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/index.css">
+        <link rel="stylesheet" href="src/css/responsive.css">
+	</head>
+	<body>
+        <div class="bg-video">
+            <video autoplay muted loop>
+                <source src="src/assets/video/video-mario.mp4" type="video/mp4">
+            </video>
+        </div>
+
+		<header>
+			<a href="#">
+				<img
+					src="src/assets/images/logo-chapeu-mario.png" alt="Logo">
+			</a>
+
+			<nav>
+				<ul>
+					<li> Home </li>
+					<li> Detalhes </li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="information">
+				<img
+					src="src/assets/images/titulo.png"
+					alt="Super Mario Bros" />
+				<p>
+					Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.
+				</p>
+				<button id="btn-trailer">Veja o trailer</button>
+			</section>
+
+			<img
+				src="src/assets/images/super-mario-chars.png"
+				alt="Mario, Luigi, Princesa Peach e cogumelo" 
+                class="mario-characters"/>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <button class="btn-close-modal" id="btn-close-modal">
+                        X
+                    </button>
+                    <iframe 
+                        src="https://www.youtube.com/embed/Cb4WV4aXBpk"
+                        frameborder="0" 
+                        width="560" 
+                        height="315"
+                        title="Trailer do filme Super Mario Bros"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+		</main>
+
+        <script src="src/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+header a img {
+	width: 65px;
+	height: 65px;
+	transition: 0.5s linear;
+}
+
+header a img:hover {
+	opacity: 0.8;
+	scale: 1.05;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	margin: 0 16px;
+	font-size: 2rem;
+	padding: 8px 16px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+
+header nav ul li:hover {
+	background-color: #f00;
+    scale: 1.05;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px auto;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	max-width: 450px;
+}
+
+.information img {
+	max-width: 450px;
+}
+
+.information p {
+	font-size: 1.8rem;
+	text-align: justify;
+	max-width: 450px;
+}
+
+.information p::selection {
+    background-color: #f00;
+}
+
+.information button {
+	background-color: #f00;
+	color: #fff;
+	font-size: 2rem;
+    font-weight: 500;
+	text-transform: uppercase;
+	border: 0px;
+	padding: 8px;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+
+.information button:hover {
+	scale: 1.05;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	letter-spacing: 1px;
+}
+
+.mario-characters {
+	max-width: 550px;
+	transition: 0.5s linear;
+	-webkit-animation: bounce 0.8s linear infinite both;
+	animation: bounce 1s linear infinite both;
+}
+
+@keyframes bounce {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	50% {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.bg-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-video .video {
+    width: 100vw;
+}
+
+.bg-video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    background-color: #f00;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 100vh;
+}
+
+.modal button {
+    background-color: #f1f1f1;
+    color: #f00;
+    border: 0px;
+    padding: 8px 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,65 @@
+@media (max-width: 1285px) {
+    .information img  {
+        max-width: 400px;
+    }
+    
+    .information p {
+        font-size: 1.8rem;
+        text-align: justify;
+        max-width: 400px;
+    }
+
+    .mario-characters {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 980px) {
+    body {
+        background: #ED213A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .bg-video {
+        display: none;
+    }
+
+    main {
+        gap: 48px;
+        justify-content: center;
+    }
+    
+    header nav ul li:hover {
+        background-color: #fff;
+        color: #f00;
+    }
+}
+
+@media (max-width: 470px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .information img  {
+        max-width: 300px;
+    }
+    
+    .information p {
+        font-size: 1.8rem;
+        text-align: justify;
+        max-width: 300px;
+    }
+
+    .mario-characters {
+        max-width: 300px;
+    }
+
+    iframe {
+        max-width: 300px;
+        height: auto;
+    }
+}
